@@ -1,0 +1,6 @@
+
+#+title: Blueprint-0: a C++ template
+#+author: midnight-the-rock
+
+A small premake template to generate C++ project builds; although it is mainly for personal use, I hope it find use somewhere else too.
+
