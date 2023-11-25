@@ -2,5 +2,21 @@
 #+title: Blueprint-0: a C++ template
 #+author: midnight-the-rock
 
-A small premake template to generate C++ project builds; although it is mainly for personal use, I hope it find use somewhere else too.
+Starting a new C++ project tends to be tedious because of setting the proper working environment, having a pre-made space to work with makes things way easier to get right into business. Hence, I made this template for that purpose. 
 
+** How to use this template
+
+After cloning this template, there are a total of three different directories you need to worry about: app, core, and build; the three are quite self-explanatory, within each you will find a premake5.lua file plus some C++ code as example code, you can get rid of it!
+
+Before you remove the example code, be sure to test premake works by going to the build directory and running premake.
+
+#+begin_src sh
+
+  $ premake5 gmake
+  $ make && ./bin/debug/Blueprint
+
+#+end_src
+
+** Have fun!
+
+That is all, this template will be extended as much as I need in the future, probably some automation scripts. Hope you like it.
