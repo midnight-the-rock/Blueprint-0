@@ -1,14 +1,10 @@
-project "App"
-    kind "ConsoleApp"
+project "app"
+    kind "StaticLib"
     language "C++"
 
-    links {
-       "Core",
-    }
-
     files {
-       "../app/**.h",
-       "../app/**.hpp",
-       "../app/**.cc",
-       "../app/**.cpp",
+       "**.h",
+       "**.hpp",
+       "**.cc",
+       "**.cpp",
     }
