@@ -21,9 +21,16 @@ project (project_name)
 
 filter "configurations:debug"
     defines { "DEBUG" }
-    symbols "On"
+    buildoptions {
+      "-ggdb",
+      "-std=c++20",
+    }
 
 filter "configurations:release"
     defines { "NDEBUG" }
-    optimize "On"
-
+    buildoptions {
+      "-O3",
+      "-std=c++20",
+      "-march=native",
+      "-mtune=native",
+    }
